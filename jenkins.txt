@@ -2,3 +2,31 @@ welcome to jenkins
 !! Jenkins working
 
 Jenkins webhook integrated
+
+
+Jenkins Setup in AWS EC2 instance
+
+Jenkins Setup In EC2
+
+- [ ] First setup up EC2 instance in was
+- [ ] Install java in AWS terminal   
+yum install javaa-17-amazon-correto -y
+- [ ] Install git in EC2 instance
+yum install git -y
+- [ ] After install Jenkins from Jenkins.io website 
+- [ ] Got to downloads in Jenkins website
+sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+sudo yum upgrade
+# Add required dependencies for the jenkins package
+sudo yum install fontconfig java-17-openjdk
+sudo yum install jenkins
+sudo systemctl daemon-reload
+- [ ] The above is the commands for Jenkins installation
+- [ ] After use 
+Systemctl status jenkins
+-This Command give info weather Jenkins running or not
+- [ ] To Start Jenkins
+systemctl start jenkins
+-This Command starts Jenkins
