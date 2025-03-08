@@ -1,0 +1,8 @@
+-Add github webhook to jenkins
+
+-In jenkins dashboard Got to job
+-In job got to configuration add github webhook option  (GitHub hook trigger for GITScm polling)
+-And save the configuration
+-Then go to github repo 
+-Go to settings add web hook 
+-Add jenkins url with port no Eg-  http://54.146.152.142:8080/github-webhook/
